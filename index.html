@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thunder Beats | Official Band Site</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            background: #0d0d0d;
+            color: white;
+        }
+        header {
+            background: url('https://images.unsplash.com/photo-1511379938547-c1f69419868d') center/cover no-repeat;
+            text-align: center;
+            padding: 120px 20px;
+        }
+        header h1 {
+            font-size: 60px;
+            letter-spacing: 4px;
+            text-shadow: 0 0 10px black;
+        }
+        nav {
+            background: black;
+            display: flex;
+            justify-content: center;
+            padding: 12px;
+            position: sticky;
+            top: 0;
+            border-bottom: 2px solid #e60000;
+        }
+        nav a {
+            margin: 0 22px;
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #e60000;
+        }
+        section {
+            padding: 70px 60px;
+        }
+        h2 {
+            font-size: 38px;
+            margin-bottom: 20px;
+            border-left: 5px solid #e60000;
+            padding-left: 12px;
+        }
+        /* Music Player */
+        #player audio {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 6px;
+        }
+        /* Tour Section */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+        }
+        table th, table td {
+            padding: 18px;
+            text-align: left;
+            border-bottom: 1px solid gray;
+        }
+        table tr:hover {
+            background: rgba(255, 0, 0, 0.2);
+        }
+        /* Store */
+        .store-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .item {
+            width: 280px;
+            margin: 20px;
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .item img {
+            width: 100%;
+            height: 280px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .item:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 20px #e60000;
+        }
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+        .gallery img, .gallery video {
+            border-radius: 10px;
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: 0.3s;
+        }
+        .gallery img:hover, .gallery video:hover {
+            transform: scale(1.07);
+            box-shadow: 0 0 20px #e60000;
+        }
+        /* Footer */
+        footer {
+            background: black;
+            text-align: center;
+            padding: 35px;
+            margin-top: 40px;
+            font-size: 18px;
+            border-top: 2px solid #e60000;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>THUNDER BEATS</h1>
+    <p>Feel the Rhythm of Thunder</p>
+</header>
+
+<nav>
+    <a href="#player">Music</a>
+    <a href="#tour">Tour Dates</a>
+    <a href="#store">Merch</a>
+    <a href="#gallery">Gallery</a>
+</nav>
+
+<!-- Music Player -->
+<section id="player">
+    <h2>🎵 Music Player</h2>
+    <p>Listen to our latest tracks</p>
+    <audio controls>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+</section>
+
+<!-- Tour Dates -->
+<section id="tour">
+    <h2>📅 Upcoming Tour Dates</h2>
+    <table>
+        <tr><th>Date</th><th>City</th><th>Venue</th><th>Tickets</th></tr>
+        <tr><td>25 Dec 2025</td><td>Mumbai</td><td>Royal Arena</td><td><button>Book Now</button></td></tr>
+        <tr><td>03 Jan 2026</td><td>Delhi</td><td>Thunder Stage</td><td><button>Book Now</button></td></tr>
+        <tr><td>12 Jan 2026</td><td>Bangalore</td><td>Live Square</td><td><button>Book Now</button></td></tr>
+        <tr><td>20 Jan 2026</td><td>Chennai</td><td>Music Hub</td><td><button>Book Now</button></td></tr>
+    </table>
+</section>
+
+<!-- Merchandise Store -->
+<section id="store">
+    <h2>🛒 Merchandise Store</h2>
+    <div class="store-container">
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f">
+            <h3>Band Hoodie</h3>
+            <p>₹1,899</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126">
+            <h3>Band T-Shirt</h3>
+            <p>₹999</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.UbJGM2xTM3Xr-o_lklxwewHaHq?w=794&h=822&rs=1&pid=ImgDetMain&o=7&rm=3">
+            <h3>Keychain + Wristband Combo</h3>
+            <p>₹450</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery">
+    <h2>📸 Gallery</h2>
+    <div class="gallery">
+        <img src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?cs=srgb&dl=pexels-wendywei-1190297.jpg&fm=jpg">
+        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745">
+        <img src="https://images.pexels.com/photos/6877350/pexels-photo-6877350.jpeg?cs=srgb&dl=pexels-cottonbro-6877350.jpg&fm=jpg">
+        <video src="video1.mp4" controls></video>
+        <video src="video2.mp4" controls></video>
+        <img src="https://images.pexels.com/photos/1247765/pexels-photo-1247765.jpeg?cs=srgb&dl=pexels-suzyhazelwood-1247765.jpg&fm=jpg">
+    </div>
+</section>
+
+<footer>
+    ©️ 2025 Thunder Beats — All Rights Reserved | Follow us on Instagram • YouTube • Spotify
+</footer>
+
+</body>
+</html>
